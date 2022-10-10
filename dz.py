@@ -22,33 +22,43 @@
 # else:
 #     print(f'Такого дня недели нет {day}')
 
+## Вариант_2
+list = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье']
+day = int(input('Введите номер дня недели '))
+if(day > 0 and day < 8):
+    print(f'Наш день недели: {list[day-1]}')
+else:
+    print(f'Такого дня недели нет {day}')
+
+
+
 # 2.Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z
 # для всех значений предикат.
-from subprocess import list2cmdline
+# from subprocess import list2cmdline
 
 
-list1 = [0, 0, 0]
-list2 = [0, 0, 1]
-list3 = [0, 1, 0]
-list4 = [0, 1, 1]
-list5 = [1, 0, 0]
-list6 = [1, 0, 1]
-list7 = [1, 1, 0]
-list8 = [1, 1, 1]
+# list1 = [0, 0, 0]
+# list2 = [0, 0, 1]
+# list3 = [0, 1, 0]
+# list4 = [0, 1, 1]
+# list5 = [1, 0, 0]
+# list6 = [1, 0, 1]
+# list7 = [1, 1, 0]
+# list8 = [1, 1, 1]
 
-def f(list):
-    a = not(list[0] or list[1] or list[2])
-    b = not list[0] and not list[1] and not list[2]
-    print(f'{list} ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z -> {a} = {b}')
-    # return
-f(list1)
-f(list2)
-f(list3)
-f(list4)
-f(list5)
-f(list6)
-f(list7)
-f(list8)
+# def f(list):
+#     a = not(list[0] or list[1] or list[2])
+#     b = not list[0] and not list[1] and not list[2]
+#     print(f'{list} ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z -> {a} = {b}')
+#     # return
+# f(list1)
+# f(list2)
+# f(list3)
+# f(list4)
+# f(list5)
+# f(list6)
+# f(list7)
+# f(list8)
 
 
 
